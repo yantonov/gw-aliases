@@ -1,0 +1,4 @@
+executable="${GW_HOME}/gw"
+
+[alias]
+git="!git.sh \"$@\""
