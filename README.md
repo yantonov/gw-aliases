@@ -1,8 +1,8 @@
 Aliases for [gw](https://github.com/gdubw/gdub/blob/master/bin/gw) tool.
 
 Usage:
-1. Define environment variable which points to directory with gw tool.
-2. Add this repository to path.
+1. Define environment variable GW_HOME which points to directory with gw tool.
+2. Add this repository to PATH.
 3. Build [alias](https://github.com/yantonov/alias) artifact, name it as gw and place into this repository 
 (binary file is ignored, it is needed to invoke gw commands).
 
