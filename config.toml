@@ -2,4 +2,5 @@ executable="${GW_HOME}/gw"
 
 [alias]
 git="!git.sh \"$@\""
-br = "!f() { gw git branch -v | grep --color '*'; }; f"
+br = "!git.sh branch -v | grep --color '*'"
+co = "!git.sh co \"$@\" | grep -A 1 '\\['"
