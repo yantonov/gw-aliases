@@ -1,2 +1,4 @@
 # ignore target binary
 /gw
+# ignore override
+/override.toml
