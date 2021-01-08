@@ -1,4 +1,5 @@
 executable="${GW_HOME}/gw"
+run_as_shell=true
 
 [alias]
 git="!git.sh \"$@\""
