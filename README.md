@@ -14,7 +14,7 @@ gw git branch
 ```
 This is much simpler than, for example:
 ```
-gw exec --threads=1 --exec='git branch'
+gw exec --threads=1 --cmd='git branch'
 ```
 
 
