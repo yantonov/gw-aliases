@@ -5,3 +5,4 @@ run_as_shell=true
 git="!git.sh \"$@\""
 br = "!git.sh branch -v | grep --color '*'"
 co = "!git.sh co \"$@\" | grep -A 1 '\\['"
+execute="!execute-cmd.sh \"$@\""
