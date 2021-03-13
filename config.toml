@@ -3,10 +3,16 @@ run_as_shell=true
 
 [alias]
 git="!git.sh \"$@\""
+# Here are some aliases for git.
+# There is no intent to reimplement all aliases here.
+# Here are just a couple of most frequently used.
+# You can call git command directly for all other cases.
 
 # show current branch
 cb = "!git.sh rev-parse --abbrev-ref HEAD"
 
-br = "!git.sh branch -v | grep --color '*'"
+# show branches
+br = "!git.sh branch -v"
+
 co = "!git.sh co \"$@\" | grep -A 1 '\\['"
 sh="!execute-cmd.sh \"$@\""
