@@ -3,6 +3,10 @@ run_as_shell=true
 
 [alias]
 git="!git.sh \"$@\""
+
+# show current branch
+cb = "!git.sh rev-parse --abbrev-ref HEAD"
+
 br = "!git.sh branch -v | grep --color '*'"
 co = "!git.sh co \"$@\" | grep -A 1 '\\['"
 sh="!execute-cmd.sh \"$@\""
