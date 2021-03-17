@@ -14,7 +14,7 @@ cb = "!git.sh rev-parse --abbrev-ref HEAD"
 # show branches
 br = "!git.sh branch -v"
 # highlight current branch (it is usefull to get one line output for each repository)
-b1 = "!git.sh branch -v | grep --color '*'"
+br1 = "!git.sh branch -v | grep --color '*'"
 
 co = "!git.sh co \"$@\" | grep -A 1 '\\['"
 sh="!execute-cmd.sh \"$@\""
