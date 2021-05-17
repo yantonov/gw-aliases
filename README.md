@@ -1,4 +1,4 @@
-Aliases for [gw](https://github.com/gdubw/gdub/blob/master/bin/gw) tool.
+Aliases for [gw](https://github.com/gdubw/gng) tool.
 
 Usage:
 1. Define environment variable GW_HOME which points to the directory which contains gw tool.
