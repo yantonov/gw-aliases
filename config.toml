@@ -8,6 +8,9 @@ git="!git.sh \"$@\""
 # Here are just a couple of most frequently used.
 # You can call git command directly for all other cases.
 
+# wrapper (we need files that are close to the target executable and require relative location)
+wrapper = "!${GW_HOME}/gng wrapper"
+
 # show current branch
 cb = "!git.sh rev-parse --abbrev-ref HEAD"
 
