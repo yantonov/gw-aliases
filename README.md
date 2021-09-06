@@ -2,6 +2,7 @@ Aliases for [gw](https://github.com/gdubw/gng) tool.
 
 Usage:
 1. Define environment variable GW_HOME which points to the directory which contains gw tool.
+(it is needed to use wrapper command which is available only for gng script)
 2. Add this repository to PATH.
 3. Build [alias](https://github.com/yantonov/alias) artifact (or use the available distribution),  
 name it as gw and place into this repository 
