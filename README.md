@@ -20,3 +20,5 @@ gw exec --threads=1 --cmd='git branch'
 
 
 For the git commands number of threads is equal to one, just to synchronize output for multiple repositories.
+
+Also, you can add your custom commands, see [documentation](https://github.com/yantonov/alias#about-overriding-configuration) for the alias tool.
