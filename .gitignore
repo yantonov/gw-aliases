@@ -2,3 +2,9 @@
 /gw
 # ignore override
 /override.toml
+
+# ignore all but specific files
+# it helps to use override settings from the different repos
+!git.sh
+!execute-sh.sh
+*.sh
