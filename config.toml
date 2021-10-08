@@ -19,5 +19,6 @@ br = "!git.sh branch -v"
 # highlight current branch (it is usefull to get one line output for each repository)
 br1 = "!git.sh branch -v | grep --color '*'"
 
-co = "!git.sh co \"$@\" | grep -A 1 '\\['"
+co = "!git.sh checkout \"$@\" | grep -A 1 '\\['"
+st = "!git.sh status"
 sh="!execute-cmd.sh \"$@\""
