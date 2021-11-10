@@ -24,4 +24,4 @@ st = "!git.sh status"
 sh="!execute-cmd.sh \"$@\""
 
 # starting from gradle 7.3 init script ask you about which project should be created
-initg="!./gradlew init --type java-library --dsl kotlin"
+initg="init --type java-library --dsl kotlin"
