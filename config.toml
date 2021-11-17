@@ -22,6 +22,3 @@ br1 = "!git.sh branch -v | grep --color '*'"
 co = "!git.sh checkout \"$@\" | grep -A 1 '\\['"
 st = "!git.sh status"
 sh="!execute-cmd.sh \"$@\""
-
-# starting from gradle 7.3 init script ask you about which project should be created
-initg="init --type java-library --dsl kotlin"
