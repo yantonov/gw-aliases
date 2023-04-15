@@ -1,4 +1,5 @@
-Aliases for [gw](https://github.com/gdubw/gng) tool.
+Aliases for [gw](https://github.com/gdubw/gng) tool.  
+Mainly it's for [Criteo](https://github.com/criteo) build system to simplify cross repo reviews.  
 
 Usage:
 1. Define the environment variable GW_HOME which points to the directory which contains gw tool.
