@@ -5,6 +5,7 @@
 
 # ignore all but specific files
 # it helps to use override settings from the different repos
+*.sh
 !git.sh
 !execute-sh.sh
-*.sh
+!compile-jvm.sh

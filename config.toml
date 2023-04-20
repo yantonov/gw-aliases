@@ -22,3 +22,5 @@ br1 = "!git.sh branch -v | grep --color '*'"
 co = "!git.sh checkout \"$@\" | grep -A 1 '\\['"
 st = "!git.sh status"
 sh="!execute-cmd.sh \"$@\""
+c = "!compile_jvm.sh"
+
