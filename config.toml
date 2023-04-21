@@ -2,26 +2,26 @@ executable="${GW_HOME}/gw"
 run_as_shell=true
 
 [alias]
+# wrapper (there is a limitation to use wrapper command, executable name should be equal to gng)
+wrapper = "!${GW_HOME}/gng wrapper"
+# simplification for complile only
+c = "!compile_jvm.sh"
+# simplification for fast tests
+t = "check"
+# git helpers, especially convenient for cross repository requests
 git="!git.sh \"$@\""
 # Here are some aliases for git.
 # There is no intent to reimplement all aliases here.
 # Here are just a couple of most frequently used.
 # You can call git command directly for all other cases.
-
-# wrapper (there is a limitation to use wrapper command, executable name should be equal to gng)
-wrapper = "!${GW_HOME}/gng wrapper"
-
 # show current branch
 cb = "!git.sh rev-parse --abbrev-ref HEAD"
-
 # show branches
 br = "!git.sh branch -v"
 # highlight current branch (it is usefull to get one line output for each repository)
 br1 = "!git.sh branch -v | grep --color '*'"
-
 co = "!git.sh checkout \"$@\" | grep -A 1 '\\['"
 st = "!git.sh status"
+# execute custom command for each project
 sh="!execute-cmd.sh \"$@\""
-c = "!compile_jvm.sh"
-t = "check"
 
