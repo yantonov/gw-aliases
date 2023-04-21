@@ -23,4 +23,5 @@ co = "!git.sh checkout \"$@\" | grep -A 1 '\\['"
 st = "!git.sh status"
 sh="!execute-cmd.sh \"$@\""
 c = "!compile_jvm.sh"
+t = "check"
 
