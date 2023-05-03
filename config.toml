@@ -5,7 +5,7 @@ run_as_shell=true
 # wrapper (there is a limitation to use wrapper command, executable name should be equal to gng)
 wrapper = "!${GW_HOME}/gng wrapper"
 # simplification for complile only
-c = "!compile_jvm.sh"
+c = "!compile-jvm.sh"
 # simplification for fast tests
 t = "check"
 # git helpers, especially convenient for cross repository requests
