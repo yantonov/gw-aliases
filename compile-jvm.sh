@@ -2,9 +2,18 @@
 set -o errexit -o nounset
 
 echo "Check compile java task"
-COMPILE_JAVA=$(gw tasks --all | grep 'compileJava' | head -n 1 || "")
+COMPILE_JAVA=$(timeout 5 gw tasks --all | grep 'compileJava' | head -n 1 || "")
+if [ $? -ne 0 ]; then
+    echo "checking compile java task failed"
+    exit 1
+fi
+
 echo "Check compile scala task"
-COMPILE_SCALA=$(gw tasks --all | grep 'compileScala' | head -n 1 || "")
+COMPILE_SCALA=$(timeout 5 gw tasks --all | grep 'compileScala' | head -n 1 || "")
+if [ $? -ne 0 ]; then
+    echo "checking compile scala task failed"
+    exit 1
+fi
 
 if [ -n "${COMPILE_JAVA}" ]; then
     echo "Compile java ..."
