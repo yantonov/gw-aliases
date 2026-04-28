@@ -1,4 +1,4 @@
-Aliases for [gw](https://github.com/gdubw/gng) tool.  
+[Aliases](https://github.com/yantonov/gw-aliases/blob/master/config.toml) for [gw](https://github.com/gdubw/gng) tool.  
 Mainly it's for [Criteo](https://github.com/criteo) build system to simplify cross repo reviews.  
 
 Usage:
