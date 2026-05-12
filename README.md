@@ -5,15 +5,16 @@ Mainly it's for [Criteo](https://github.com/criteo) build system to simplify cro
 # Usage:
 1. Define the environment variable GW_HOME which points to the directory which contains gw tool.
 (it is needed to use wrapper command which is available only for gng script)
-2. Add this repository to PATH.
-3. Build [alias](https://github.com/yantonov/alias) artifact (or use the available distribution),  
-name it as gw and place into this repository 
-(binary 'gw' file has already ignored inside this repository, it is needed to invoke gw commands).
-4. as alternative to (3) you can use 
-```bash 
-    install.sh 
-``` 
-script that downloads latest binary and puts it to the current directory
+2. clone and add this repository to the front of PATH
+3. use 
+```bash
+    install.sh
+```
+script that downloads latest alias distribution for the current operating system names it in appropriate way and puts to the current directory  
+
+Alternatively, you can:  
+a) build [alias](http://github.com/yantonov/alias) manually (or use the available distribution)  
+b) name it as uv and put it into this repository (binary file has already ignored inside this repository)  
 
 After that, for example, you can use execute git commands across multiple repository like this:
 (assumed that the corresponding plugin is being used)
