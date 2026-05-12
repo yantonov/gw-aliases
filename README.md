@@ -1,8 +1,8 @@
-# Intro
+### About
 [Aliases](https://github.com/yantonov/gw-aliases/blob/master/config.toml) for [gw](https://github.com/gdubw/gng) tool.  
 Mainly it's for [Criteo](https://github.com/criteo) build system to simplify cross repo reviews.  
 
-# Installation:
+### Installation:
 1. Define the environment variable GW_HOME which points to the directory which contains gw tool.
 (it is needed to use wrapper command which is available only for gng script)
 2. clone and add this repository to the front of PATH
@@ -16,7 +16,7 @@ Alternatively, you can:
 a) build [alias](http://github.com/yantonov/alias) manually (or use the available distribution)  
 b) name it as uv and put it into this repository (binary file has already ignored inside this repository)  
 
-# Usage
+### Usage
 After that, for example, you can use execute git commands across multiple repository like this:
 (assumed that the corresponding plugin is being used)
 
