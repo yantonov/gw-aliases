@@ -9,7 +9,7 @@ c = "!compile-jvm.sh"
 # simplification for fast tests
 t = "check"
 # git helpers, especially convenient for cross repository requests
-git="!git.sh \"$@\""
+git="!git.sh"
 # Here are some aliases for git.
 # There is no intent to reimplement all aliases here.
 # Here are just a couple of most frequently used.
@@ -20,8 +20,8 @@ cb = "!git.sh rev-parse --abbrev-ref HEAD"
 br = "!git.sh branch -v"
 # highlight current branch (it is usefull to get one line output for each repository)
 br1 = "!git.sh branch -v | grep --color '*'"
-co = "!git.sh checkout \"$@\" | grep -A 1 '\\['"
+co = "!f() { git.sh checkout \"$@\" | grep -A 1 '\\['; }; f"
 st = "!git.sh status"
 # execute custom command for each project
-sh="!execute-cmd.sh \"$@\""
+sh="!execute-cmd.sh"
 
