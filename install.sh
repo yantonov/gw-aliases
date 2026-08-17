@@ -8,4 +8,4 @@ command -v curl >/dev/null 2>&1 || { echo "I require curl but it's not installed
 
 APP_NAME="gw"
 
-curl -fsSL "https://raw.githubusercontent.com/yantonov/alias/master/bin/download.sh" | bash -s -- "${APP_NAME}"
+curl -fsSL "https://raw.githubusercontent.com/yantonov/alias/master/bin/install/download.sh" | bash -s -- "${APP_NAME}"
